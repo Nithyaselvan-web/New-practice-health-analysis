@@ -21,7 +21,7 @@ function calculateRCM() {
     let resultText = `<h3>RCM Performance Analysis</h3>`;
 
     function checkBenchmark(value, benchmark, condition) {
-        return (condition(value, benchmark)) ? `<span style="color: red;">❌ Needs Attention</span>` : `<span style="color: green;">✅ Good</span>`;
+        return (condition(value, benchmark)) ? `<span class='red-flag'>⚠️ Needs Attention</span>` : `<span class='green-flag'>✅ Good</span>`;
     }
 
     resultText += `<p>DAR: ${dar} ${checkBenchmark(dar, 40, (a, b) => a > b)}</p>`;

@@ -41,3 +41,13 @@ button:hover {
     font-weight: bold;
     margin-top: 20px;
 }
+
+.red-flag {
+    color: red;
+    font-weight: bold;
+}
+
+.green-flag {
+    color: green;
+    font-weight: bold;
+}
