@@ -27,23 +27,32 @@
         <div id="calculation-section" style="display: none;">
             <h2>Enter Your RCM Data</h2>
 
-            <label>Days in Accounts Receivable (DAR) ($):</label>
-            <input type="number" id="dar" placeholder="Enter days">
+            <label>Accounts Receivable ($):</label>
+            <input type="number" id="totalAR" placeholder="Enter total A/R">
 
-            <label>Clean Claim Rate (CCR %):</label>
-            <input type="number" id="ccr" placeholder="Enter %">
+            <label>Average Daily Charges ($):</label>
+            <input type="number" id="avgDailyCharges" placeholder="Enter daily charges">
 
-            <label>First-Pass Resolution Rate (FPRR %):</label>
-            <input type="number" id="fprr" placeholder="Enter %">
+            <label>Clean Claims Submitted (#):</label>
+            <input type="number" id="cleanClaims" placeholder="Enter number of claims">
 
-            <label>Net Collection Rate (NCR %):</label>
-            <input type="number" id="ncr" placeholder="Enter %">
+            <label>Total Claims Submitted (#):</label>
+            <input type="number" id="totalClaims" placeholder="Enter total claims">
 
-            <label>Gross Collection Ratio (%):</label>
-            <input type="number" id="gcr" placeholder="Enter %">
+            <label>Claims Paid on First Submission (#):</label>
+            <input type="number" id="firstPassClaims" placeholder="Enter first-pass claims">
 
-            <label>A/R Aging Analysis (90+ Days %):</label>
-            <input type="number" id="ar90" placeholder="Enter %">
+            <label>Payments Received ($):</label>
+            <input type="number" id="paymentsReceived" placeholder="Enter received payments">
+
+            <label>Payments Expected ($):</label>
+            <input type="number" id="paymentsExpected" placeholder="Enter expected payments">
+
+            <label>Total Billed Charges ($):</label>
+            <input type="number" id="totalBilledCharges" placeholder="Enter billed charges">
+
+            <label>A/R Older than 90 Days ($):</label>
+            <input type="number" id="arOver90" placeholder="Enter A/R over 90 days">
 
             <button onclick="calculateRCM()">Analyze</button>
         </div>
